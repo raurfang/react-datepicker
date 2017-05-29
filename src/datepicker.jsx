@@ -217,7 +217,7 @@ export default class DatePicker extends React.Component {
       }
     )
     this.setSelected(date, event)
-    this.setOpen(false)
+    this.setState({}, () => this.setOpen(false))
   }
 
   setSelected = (date, event, keepInput) => {
